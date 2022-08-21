@@ -1,2 +1,2 @@
 # ScriptTukeyTest_Agroteste
-Script para análise de Tukey 0.05, com transformação dos dados pela raíz quadrada, seguindo as normas de recomendações do MAPA
+Script no R para análise de Tukey 0.05, com transformação dos dados pela raíz quadrada + 5, seguindo as normas de recomendações do MAPA
