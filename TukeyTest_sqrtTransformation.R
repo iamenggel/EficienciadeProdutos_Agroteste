@@ -1,16 +1,15 @@
-dir()
-
-bloco<-read.table("dados.txt",h=T)
-attach(bloco)
-
-head (bloco)
-
 library(multcomp)
 library(stats)
 library(multcompView)
 library(emmeans)
 library(ggplot2)
 
+dir()
+
+bloco<-read.table("bloco.txt",h=T)
+attach(bloco)
+
+head (bloco)
 
 Trat= as.factor(Trat)
 
@@ -153,7 +152,6 @@ y_tipoD<-sd(sqrt.tipoD)
 
 cv_tipoD <- y_tipoD / x_tipoD *100
 cv_tipoD
-detach(bloco)
 
 #transformacao raiz quadrada para avaliacao 5
 
@@ -182,5 +180,3 @@ cv_tipoE <- y_tipoE / x_tipoE *100
 cv_tipoE
 
 detach(bloco)
-
-
